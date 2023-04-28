@@ -1,0 +1,109 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #5d83ae;
+}
+
+.container {
+max-width: 700px;
+margin: 0 auto;
+}
+
+.tweet {
+display: flex;
+flex-direction: row;
+margin: 10px;
+background-color: white;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+margin-right: 10px;
+}
+
+.avatar img {
+border-radius: 50%;
+width: 30px;
+height: 30px;
+}
+
+.tweet-content {
+display: flex;
+flex-direction: column;
+}
+
+.username {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.text {
+margin-top: 5px;
+}
+
+#crear-btn {
+position: fixed;
+bottom: 0;
+right: 0;
+margin: 20px;
+padding: 10px 20px;
+border-radius: 20%;
+background-color: #007bff;
+color: white;
+cursor: pointer;
+width: 100px;
+height: 60px;
+font-size: 20px;
+text-align: center;
+line-height: 60px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease;
+}
+
+#crear-btn:hover {
+background-color: #0056b3;
+transform: scale(1.1);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Agregar una sombra suave a la tarjeta de tweet */
+.tweet {
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+/* Aumentar el contraste del texto de usuario */
+.username {
+color: #333;
+}
+
+/* Añadir un poco de espacio adicional entre los tweets */
+.tweet + .tweet {
+margin-top: 20px;
+}
+
+/* Establecer un ancho máximo para las imágenes de avatar */
+.avatar img {
+max-width: 100%;
+}
+
+/* Hacer que el texto del tweet sea un poco más grande */
+.text {
+font-size: 18px;
+line-height: 1.4;
+}
+
+/* Agregar un poco de espacio extra en la parte inferior del cuerpo */
+body {
+padding-bottom: 60px;
+}
+
+/* Alinear el botón de crear tweet al centro */
+#crear-btn {
+margin: 0 auto;
+left: 0;
+right: 0;
+}
